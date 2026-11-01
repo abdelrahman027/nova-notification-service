@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to nova bank</title>
+</head>
+<body>
+<h1 th:text="${bankName}">Nova Bank</h1>
+
+<div th:text="'welcome to  ' + ${bankName} + '!'">Welcome to nova bank</div>
+
+<div th:text="'Dear ' + ${firstName} + ' ' + ${lastName}">Dear John Doe</div>
+
+
+<div th:text="${accountNumber}">account number</div>
+
+<p> account successfully created</p>
+
+</body>
+</html>

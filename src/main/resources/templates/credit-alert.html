@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit Alert - Nova Bank</title>
+</head>
+<body>
+
+<h1 th:text="${bankName}">Nova Bank</h1>
+
+<div th:text="${firstName}">
+    Dear John Doe
+</div>
+
+<div th:text="'You received ' + ${amount} + ' ' + ${currency}">
+    You received 100.00 USD
+</div>
+
+<div th:text="'Account number: ' + ${accountNumber}">
+    Account number
+</div>
+
+<div th:text="'Transaction reference number: ' + ${reference}">
+    Transaction reference number
+</div>
+
+<div th:text="'Your new balance: ' + ${balance} + ' ' + ${currency}">
+    Your new balance
+</div>
+
+<p>Your account has been credited successfully.</p>
+
+</body>
+</html>
